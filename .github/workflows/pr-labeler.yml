@@ -13,8 +13,6 @@ jobs:
     steps:
       - uses: hmarr/debug-action@v2.0.1
 
-      - run: echo ${{ github.token }}
-
       - name: "Validate PR's title"
         uses: thehanimo/pr-title-checker@v1.3.4
         with:
