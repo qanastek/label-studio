@@ -125,6 +125,7 @@ jobs:
     uses: heartexlabs/label-studio/.github/workflows/docker-build.yml@develop
     with:
       ref: ${{ github.ref_name }}
+    secrets: inherit
 
   pytest:
     name: "Tests"
